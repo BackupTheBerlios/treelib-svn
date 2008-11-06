@@ -10,7 +10,7 @@ import java.util.logging.Logger;
 
 import org.junit.Test;
 
-import com.sun.xml.internal.bind.v2.runtime.unmarshaller.XsiNilLoader.Array;
+
 
 import antlr.RecognitionException;
 import antlr.TokenStreamException;

@@ -25,7 +25,7 @@ Requirements:
 4) graphviz (optional for displaying class hierarquies)
 
 To checkout the project do:
-svn checkout svn+ssh://developername@svn.berlios.de/svnroot/repos/treelib/trunk treelib
+svn checkout svn+ssh://<developer_name>@svn.berlios.de/svnroot/repos/treelib/trunk treelib
 
 To compile the project:
 mvn compile
@@ -38,3 +38,5 @@ mvn site
 
 To create an eclipse project:
 mvn eclipse:eclipse
+
+There is also a plugin for netbeans that opens maven projects.
