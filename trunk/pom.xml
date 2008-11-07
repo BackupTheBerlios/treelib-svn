@@ -4,15 +4,12 @@
 	<groupId>org.treelib</groupId>
 	<artifactId>treelib</artifactId>
 	<!--<packaging>jar</packaging>-->
-	<version>0.9.1b</version>
+	<version>0.1</version>
 	<name>Treelib</name>
 	<inceptionYear>2008</inceptionYear>
-	<description> Treelib provides tree distance functions. We currently
-	provide the following functions
+	<description> Treelib provides tree distance functions. 
 	</description>
-	<url>treelib.berlios.de</url>
-
-
+	<url>http://treelib.berlios.de</url>
 	<properties>
 		<!-- additional unit test files to be downloaded -->
 		<my.test.data.db>slices</my.test.data.db>
@@ -22,7 +19,7 @@
 	<licenses>
 		<license>
 			<name>Apache License, Version 2.0</name>
-			<url>http://www.apache.org/licenses/LICENSE-2.0</url>
+			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
 		</license>
 	</licenses>
 	
@@ -31,7 +28,7 @@
 	<distributionManagement>
 		<site>
 			<id>website</id>
-			<url>scp://obsearch.net/</url>
+			<url>scp://arnoldomuller@shell.berlios.de/home/groups/treelib/htdocs/</url>
 		</site>
 	</distributionManagement>
 	
@@ -58,8 +55,8 @@
 	</mailingLists>
 
 	<issueManagement>
-		<system>Google's issue system</system>
-		<url>http://code.google.com/p/obsearch/issues/list</url>
+		<system>Berlios issue system</system>
+		<url>https://developer.berlios.de/bugs/?group_id=10312</url>
 	</issueManagement>
 
 
@@ -79,12 +76,7 @@
 			<scope>compile</scope>
 		</dependency>
 
-		<dependency>
-			<groupId>log4j</groupId>
-			<artifactId>log4j</artifactId>
-			<version>1.2.13</version>
-			<scope>compile</scope>
-		</dependency>
+
 
 		<dependency>
 			<groupId>antlr</groupId>
@@ -154,42 +146,28 @@
 				<artifactId>maven-javadoc-plugin</artifactId>
 			</plugin>
 
-			<!--
+
 					<plugin>
 					<groupId>org.codehaus.mojo</groupId>
 					<artifactId>findbugs-maven-plugin</artifactId>
 					<configuration>
 					<argLine>-Xmx1200M</argLine>
-					<excludeFilterFile>findbugs-exclude.xml</excludeFilterFile>
 					<relaxed>true</relaxed>
 					</configuration>
 					</plugin>
-			-->
+
 
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-report-plugin</artifactId>
 			</plugin>
 
-			<!--
+<!--
 					<plugin>
 					<groupId>org.codehaus.mojo</groupId>
-					<artifactId>cobertura-maven-plugin</artifactId>
-					<configuration>
-					<maxmem>1700</maxmem>
-					<instrumentation>
-					<ignores>
-					<ignore>org.ajmm.obsearch.example.SliceLexer</ignore>
-					<ignore>org.ajmm.obsearch.example.SliceParser</ignore>
-					</ignores>
-					<excludes>
-					<exclude>org.ajmm.obsearch.example.SliceLexer</exclude>
-					<exclude>org.ajmm.obsearch.example.SliceParser</exclude>
-					</excludes>
-					</instrumentation>
-					</configuration>
+					<artifactId>cobertura-maven-plugin</artifactId>				
 					</plugin>
-			-->
+-->
 
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
@@ -277,7 +255,7 @@
 			<plugin>
 				<artifactId>maven-release-plugin</artifactId>
 				<configuration>
-					<tagBase>https://obsearch.googlecode.com/svn/tags</tagBase>
+					<tagBase>https://svn.berlios.de/svnroot/repos/treelib/tags</tagBase>
 				</configuration>
 			</plugin>
 			<plugin>
@@ -437,9 +415,9 @@
 
 
 	<scm>
-		<connection>scm:svn:https://obsearch.googlecode.com/svn/trunk/</connection>
-		<developerConnection>scm:svn:https://obsearch.googlecode.com/svn/trunk/</developerConnection>
-		<url>http://obsearch.googlecode.com/svn/</url>
+		<connection>scm:svn:http://svn.berlios.de/svnroot/repos/treelib/trunk</connection>
+		<developerConnection>scm:svn:https://svn.berlios.de/svnroot/repos/treelib/trunk</developerConnection>
+		<url>https://svn.berlios.de/svnroot/repos/treelib/</url>
 	</scm>
 	
 	<organization>

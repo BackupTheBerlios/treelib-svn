@@ -28,7 +28,7 @@
 
 	<files>
     <file>
-      <source>README.txt</source>
+      <source>Readme.txt</source>
       <outputDirectory>/</outputDirectory>
       <filtered>true</filtered>
     </file>

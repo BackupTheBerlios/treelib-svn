@@ -1,26 +1,21 @@
  -----
- OBSearch
+ Treelib
  -----
- The OBSearch Team
+ The Treelib Team
  -----
 
 Welcome!
 ~~~~~~~~
 
-  OBSearch is a distributed similarity search index.  Examples of things you can do with OBSearch:
+ Treelib provides tree distance functions. We currently provide the following functions:
 
+  * Tree edit distance ( O(n^3) Demaine et al. O(n^4) Shasha and Zhang )
 
-  * Match programs and help to detect Open Source/Libre license violations.
+  * BDist, n-gram histogram distance (O(n)  Yang et al.)
 
-  * Find music that sounds like Sisters of Mercy.
-
-  * Match huge vectors of randomly generated integers just for fun.
+  * mtd, multi-set tree distance (O(n)   Muller-Molina et al.)
 
   []
 
 
-[perezosoUltimateRecortadoWeb.jpg]  
-
-
- 
- This project started as part of {{{http://code.google.com/soc/}Google Summer of Code 2007}}. The mentoring organization was Portland State University.
+  Our project is very easy to use, please check our 1 minute {{{tutorial.html}tutorial}}.

@@ -28,7 +28,7 @@ shell("mvn assembly:assembly");
 
 
 # upload the distribution files
-@files = `ls ./target/obsearch*`;
+@files = `ls ./target/treelib*`;
 $fileMsg = "";
 $version = "";
 
@@ -51,18 +51,18 @@ OBSearch $version has been released.
 Release highlights:
 
 You can download it from:
-http://code.google.com/p/obsearch/downloads/list
+https://developer.berlios.de/project/showfiles.php?group_id=10312
 
 $fileMsg
 
 Please send any bug reports to:
-http://code.google.com/p/obsearch/issues/list
+https://developer.berlios.de/bugs/?group_id=10312
 
-Homepage:
-http://code.google.com/p/obsearch/
+Berlios Homepage:
+https://developer.berlios.de/projects/treelib/
 
 Website:
-http://obsearch.berlios.de/
+http://treelib.berlios.de/
 
 
 Arnoldo Muller
@@ -79,8 +79,8 @@ close OUT;
 
 shell("mvn site:deploy");
 
-print "\n\nPlease run the following command when you are sure everything is ok\n";
-print "svn copy https://obsearch.googlecode.com/svn/trunk/ https://obsearch.googlecode.com/svn/tags/$version -m 'LABEL: $version'  --username <you>\n";
+#print "\n\nPlease run the following command when you are sure everything is ok\n";
+#print "svn copy https://obsearch.googlecode.com/svn/trunk/ https://obsearch.googlecode.com/svn/tags/$version -m 'LABEL: $version'  --username <you>\n";
 
 sub uploadFileToGoogleCode {
 		my($file) = @_;

@@ -1,3 +1,5 @@
+Treelib Version: ${version}
+
 Treelib provides tree distance functions. We currently
 provide the following functions:
 
@@ -34,9 +36,13 @@ To test the project:
 mvn test
 
 To create the site of the project:
-mvn site
+mvn site:site
 
 To create an eclipse project:
 mvn eclipse:eclipse
 
 There is also a plugin for netbeans that opens maven projects.
+
+
+Please remember that every file should contain the notice:
+http://www.apache.org/legal/src-headers.html#headers

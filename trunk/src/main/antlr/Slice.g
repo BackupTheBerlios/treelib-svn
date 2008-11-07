@@ -1,5 +1,5 @@
 header {
-    package net.obsearch.example;
+    package org.treelib;
 }
 
 class SliceParser extends Parser;
