@@ -12,10 +12,14 @@
 
 ----------------------------------------
 
-ShashaAndZhangReferenceImpl a = TreeFactory.createTedShashaZhang("a(b)");
+ShashaAndZhangReferenceImpl a = TreeFactory.createTedShashaZhang("a(b,e)");
 ShashaAndZhangReferenceImpl b = TreeFactory.createTedShashaZhang("a()");	
-double result = a.distance(b); // returns 1
+double result = a.distance(b); // returns 2
 
+// For the sake of clarity, the expression "a(b,e)" represents the tree:
+    a
+   / \
+  b   e
 ----------------------------------------
 
   
