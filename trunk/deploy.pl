@@ -84,30 +84,7 @@ shell("mvn site:deploy");
 
 sub uploadFileToGoogleCode {
 		my($file) = @_;
-		my $comment;
-		if($file =~ /bin/){
-				$comment = "binary";
-		}
-		elsif($file =~/jar/){
-				$comment = "jar-dist";
-						($v) = ($file =~ /obsearch-([\d|.|\w]*)[.]jar/);
-				$version = $v;
-				#print "Version found! $version";
-		}
-		else{
-				$comment = "source";
-		}
-    
-		my $md5 = sum($file,"md5");
-		my $sha1 = sum($file,"sha1");
-		$sfile = $file;
-		#file without the prefix dir
-		$sfile =~ s/[.]\/target\///g;
-    print "$sfile $md5 $sha1\n";
-		$fileMsg =  "$fileMsg\n$md5 $sha1 $sfile";
-		my $cmd = "python googlecode_upload.py  --summary=$comment -p obsearch -l $md5,$sha1  --config-dir=./.svn -u $user -w $password $file";
-		shell($cmd);
-    
+		`ncftpput ftp.berlios.de incoming $file`;
 }
 
 
